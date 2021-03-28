@@ -110,6 +110,7 @@ CREATE TABLE i5_rezerwacja (
     CONSTRAINT fk_i5_miejsce_parkingowe FOREIGN KEY (parking) REFERENCES i5_miejsce_parkingowe(id),
     CONSTRAINT unique_i5_parking UNIQUE (parking),
     CONSTRAINT unique_i5_apartament UNIQUE (apartament)
+
 );
 
 CREATE TABLE i5_historia_rezerwacji (

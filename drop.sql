@@ -37,7 +37,10 @@ DROP SEQUENCE seq_i5_rezerwacja_id;
 DROP SEQUENCE seq_i5_uprawnienia_id;
 DROP SEQUENCE seq_i5_uzytkownik_id;
 
+/*USUWANIE PAKIETOW*/
 drop package body overload_dodaj_rezerwacje;
 drop package overload_dodaj_rezerwacje;
+/*END USUWANIE PAKIETOW*/
 
 drop trigger trigger_zwolnij_miejsce_ap;
+drop trigger dodaj_rezerwacje_do_historii;

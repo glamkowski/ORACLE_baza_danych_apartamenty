@@ -130,10 +130,23 @@ BEFORE DELETE ON i5_rezerwacja
 FOR EACH ROW
 BEGIN
 if :old.parking IS NOT NULL THEN
-    UPDATE i5_miejsce_parkingowe SET status='D' WHERE id=:old.parking;
+    UPDATE i5_miejsce_parkingowe SET status='W' WHERE id=:old.parking;
 end if;
-    UPDATE i5_apartament SET status='D' WHERE id=:old.apartament;
+    UPDATE i5_apartament SET status='W' WHERE id=:old.apartament;
 END;
 /
 
 /* END WYZWALACZ ZMIENIA STATUS APARTAMENTU I PARKINGU NA WOLNY */
+
+/* WYZWALACZ DODAJE USUNIÊTE REZERWACJE DO HISTORII REZERWACJI */
+
+CREATE OR REPLACE TRIGGER dodaj_rezerwacje_do_historii
+BEFORE DELETE ON i5_rezerwacja
+FOR EACH ROW
+BEGIN
+INSERT INTO i5_historia_rezerwacji (rezerwacja, klient, apartament, parking, przyjazd, odjazd, suma_oplat)
+VALUES (:old.id, :old.klient, :old.apartament, :old.parking, :old.przyjazd, :old.odjazd, :old.suma_oplat);
+END;
+/
+/* END WYZWALACZ DODAJE USUNIÊTE REZERWACJE DO HISTORII REZERWACJI */
+

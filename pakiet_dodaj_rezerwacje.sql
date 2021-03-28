@@ -5,6 +5,7 @@ IS
     PROCEDURE dodaj_rezerwacje
     (uzytkownik IN INTEGER, apartament IN INTEGER, klient IN INTEGER, parking IN INTEGER, przyjazd IN VARCHAR2, odjazd IN VARCHAR2);
 end;
+/
 
 CREATE OR REPLACE PACKAGE BODY overload_dodaj_rezerwacje
 IS
@@ -45,6 +46,15 @@ begin
     UPDATE i5_miejsce_parkingowe SET status='Z' WHERE id=parking;
 end;
 end;
+/
 
-/* (APARTAMENT) (KLIENT) [PARKING] (PRZYJAZD) (ODJAZD) */
-exec overload_dodaj_rezerwacje.dodaj_rezerwacje (1, 13, 10, 1, '01-02-2021', '23-02-2021');
+/*PROCEDURA USUWA WYGASLE REZERWACJE ORAZ WYSWIETLA INFORMACJE O ICH ILOSCI*/
+CREATE OR REPLACE PROCEDURE zwolnij_wolne_apartamenty
+IS
+ilosc_rekordow INTEGER;
+BEGIN
+SELECT COUNT(*) INTO ilosc_rekordow FROM i5_rezerwacja WHERE odjazd < CURRENT_DATE;
+dbms_output.put_line ('Rezerwacje przeniesione do archiwum: ' || ilosc_rekordow);
+DELETE i5_rezerwacja WHERE odjazd < CURRENT_DATE;
+END;
+/
