@@ -93,7 +93,32 @@ INSERT INTO i5_klient (imie, nazwisko, dowod) VALUES ('Witold', 'Spokojny', 'EXE
 INSERT INTO i5_rezerwacja (uzytkownik, apartament, klient, przyjazd, odjazd, suma_oplat) 
 VALUES (1, 1, 1, to_date('16-03-2021', 'DD-MM-YYYY'), to_date('20-03-2021', 'DD-MM-YYYY'), 3000.30);
 
+--Miejsca parkingowe
+--Miejsca [P] dla budynku Niebieski
+INSERT INTO i5_miejsce_parkingowe (kod, budynek) VALUES ('N1', 1);
+INSERT INTO i5_miejsce_parkingowe (kod, budynek) VALUES ('N2', 1);
+INSERT INTO i5_miejsce_parkingowe (kod, budynek) VALUES ('N3', 1);
+INSERT INTO i5_miejsce_parkingowe (kod, budynek) VALUES ('N4', 1);
+INSERT INTO i5_miejsce_parkingowe (kod, budynek) VALUES ('N5', 1);
+--Miejsca [P] dla budynku Srebrny
+INSERT INTO i5_miejsce_parkingowe (kod, budynek) VALUES ('S1', 2);
+INSERT INTO i5_miejsce_parkingowe (kod, budynek) VALUES ('S2', 2);
+INSERT INTO i5_miejsce_parkingowe (kod, budynek) VALUES ('S3', 2);
+INSERT INTO i5_miejsce_parkingowe (kod, budynek) VALUES ('S4', 2);
+INSERT INTO i5_miejsce_parkingowe (kod, budynek) VALUES ('S5', 2);
+--Miejsca [P] dla budynku Zloty
+INSERT INTO i5_miejsce_parkingowe (kod, budynek) VALUES ('Z1', 3);
+INSERT INTO i5_miejsce_parkingowe (kod, budynek) VALUES ('Z2', 3);
+INSERT INTO i5_miejsce_parkingowe (kod, budynek) VALUES ('Z3', 3);
+INSERT INTO i5_miejsce_parkingowe (kod, budynek) VALUES ('Z4', 3);
+--Miejsca [P] dla budynku Pustynny
 INSERT INTO i5_miejsce_parkingowe (kod, budynek) VALUES ('P1', 4);
-select * from i5_apartament;
+INSERT INTO i5_miejsce_parkingowe (kod, budynek) VALUES ('P2', 4);
+INSERT INTO i5_miejsce_parkingowe (kod, budynek) VALUES ('P3', 4);
+INSERT INTO i5_miejsce_parkingowe (kod, budynek) VALUES ('P4', 4);
+--Miejsca [P] dla budynku Wakacyjny
+INSERT INTO i5_miejsce_parkingowe (kod, budynek) VALUES ('P1', 5);
+INSERT INTO i5_miejsce_parkingowe (kod, budynek) VALUES ('P2', 5);
+INSERT INTO i5_miejsce_parkingowe (kod, budynek) VALUES ('P3', 5);
 
 
