@@ -130,9 +130,9 @@ BEFORE DELETE ON i5_rezerwacja
 FOR EACH ROW
 BEGIN
 if :old.parking IS NOT NULL THEN
-    UPDATE i5_miejsce_parkingowe SET status='W' WHERE id=:old.parking;
+    UPDATE i5_miejsce_parkingowe SET status='D' WHERE id=:old.parking;
 end if;
-    UPDATE i5_apartament SET status='W' WHERE id=:old.apartament;
+    UPDATE i5_apartament SET status='D' WHERE id=:old.apartament;
 END;
 /
 
