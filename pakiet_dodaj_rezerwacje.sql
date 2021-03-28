@@ -46,4 +46,5 @@ begin
 end;
 end;
 
+/* (APARTAMENT) (KLIENT) [PARKING] (PRZYJAZD) (ODJAZD) */
 exec overload_dodaj_rezerwacje.dodaj_rezerwacje (1, 13, 10, 1, '01-02-2021', '23-02-2021');
