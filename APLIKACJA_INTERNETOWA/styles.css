@@ -1,0 +1,398 @@
+body {
+    background-color: #494f5c;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+#pojemnik {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#naglowek_1b {
+    margin: 0px auto 10px auto;
+    width: 1000px;
+    height: 152px;
+    background-color: #d8d8d8;
+    border-radius: 0px 0px 8px 8px;
+}
+
+#pojemnik_logo {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+    background-color: #494f5c;
+    float: right;
+    border-radius: 0px 0px 50px 50px;
+}
+
+.input_log1 {
+    width: 200px;
+    height: 21px;
+    border: solid 3px white;
+    background-color: #f1f1f1;
+    margin: 2px;
+    -webkit-transition-duration: 0.3s;
+}
+
+.input_log1:focus {
+    outline-style: none;
+    background-color: #d8d8d8;
+}
+
+.button_log1 {
+    width: 210px;
+    height: 30px;
+    border: solid 1px white;
+    background-color: #494f5c;
+    margin-top: 3px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.button_log1:focus {
+    outline-style: none;
+}
+
+.form_logowanie {
+    display: inline-block;
+    float: left;
+    margin: 30px;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+#nawigacja {
+    margin: 10px auto 10px auto;
+    width: 1000px;
+    height: 60px;
+    background-color: #d8d8d8;
+    border-radius: 8px;
+}
+
+.nav_ul {
+    display: inline-block;
+    margin: 11px;
+}
+
+.nav_li {
+    display: inline-block;
+    float: left;
+}
+
+.a_li {
+    color: white;
+    padding: 10px 30px 10px 30px;
+    background-color: #494f5c;
+    margin: 0px 10px 0px 2px;
+    border-radius: 8px;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.a_li:hover {
+    background-color: #3570ef;
+}
+
+a.li:hover {
+    background-color: red;
+}
+
+#zawartosc {
+    margin: 10px auto 10px auto;
+    width: 1000px;
+    min-height: 300px;
+    background-color: #ffffff;
+    border-radius: 0;
+}
+
+#stopka {
+    margin: 10px auto 10px auto;
+    width: 1000px;
+    min-height: 80px;
+    background-color: #d8d8d8;
+    border-radius: 8px;
+}
+
+#zawartosc {
+    margin: 10px auto 10px auto;
+    width: 988px;
+    min-height: 300px;
+    background-color: #d8d8d8;
+    border: solid 5px white;
+    border-radius: 6px;
+}
+
+.ataskbar {
+    color: #494f5c;
+    display: inline-block;
+    margin: 11px;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: monospace;
+}
+
+.taskbar {
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 50px;
+}
+
+.litaskbar {
+    color: #494f5c;
+    float: left;
+    list-style: none;
+    margin: 0px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin: 0px 0px 0px 3px;
+}
+
+.ultaskbar {
+    margin: 0;
+    padding: 0;
+}
+
+.post {
+    display: inline-block;
+    background-color: #dedede;
+    width: 100%;
+    min-height: 145px;
+    margin: 0 0 10px 0px;
+}
+
+.h1post {
+    color: #494f5c;
+    font-family: sans-serif;
+    margin: 10px;
+}
+
+.ppost {
+    text-align: justify;
+    margin: 10px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.afooter {
+    display: inline-block;
+    margin: 19px;
+    font-family: sans-serif;
+    font-size: 12px;
+    background-color: #494f5c;
+    color: #c3c3c3;
+    padding: 12px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.afooter2 {
+    display: inline-block;
+    margin: 19px;
+    font-family: sans-serif;
+    font-size: 12px;
+    background-color: #494f5c;
+    color: #c3c3c3;
+    padding: 12px;
+    border-radius: 7px;
+    font-weight: bold;
+    float: right;
+}
+
+.ali {
+    color: #494f5c;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.input_log1:focus::placeholder {
+    color: transparent;
+}
+
+#logowanieadmin {
+    width: 274px;
+    height: 167px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.welcome {
+    display: inline-block;
+    float: left;
+    margin: 37px;
+    background-color: #00d237;
+    padding: 15px;
+    border-radius: 10px;
+    list-style: none;
+    font-family: cursive;
+    color: #ffffff;
+}
+
+a.e-login {
+    width: 189px;
+    display: inline-block;
+    /* float: left; */
+    background-color: #b52929;
+    color: #f1f1f1;
+    font-family: sans-serif;
+    margin: 20px 0 0 0px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+a.e-login2 {
+    width: 90px;
+    display: inline-block;
+    float: left;
+    background-color: #b52929;
+    color: #f1f1f1;
+    font-family: sans-serif;
+    margin: 48px 0 0 0px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.trprofil {
+    color: white;
+}
+
+.ptd {
+    color: #494f5c;
+    background-color: #f1f1f1;
+    padding: 12px;
+    font-family: sans-serif;
+}
+
+.tabledane {
+    width: 100%;
+}
+
+.admin_panel2 {
+    background-color: #f1f1f1;
+    color: #ffffff;
+    float: right;
+    padding: 2px;
+    font-family: monospace;
+    margin: 7px;
+}
+
+.admin_panel3 {
+    list-style: none;
+}
+
+.admin_panel_link {
+    color: white;
+    text-decoration: none;
+    padding: 6px;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #494f5c;
+    margin: 3px;
+}
+
+.admin_panel_link:hover {
+    background-color: #3570ef;
+}
+
+.rezerwacja_s {
+    background-color: #d8d8d8;
+    width: 100%;
+}
+
+.rezerwacja_s tr {
+    padding: 5px;
+}
+
+.rezerwacja_s td {
+    color: #494f5c;
+    background-color: #f1f1f1;
+    padding: 12px;
+    font-family: sans-serif;
+    width: 50%;
+}
+
+.button_send {
+    width: 210px;
+    height: 30px;
+    border: solid 1px white;
+    background-color: #494f5c;
+    margin-top: 3px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.button_nosend {
+    width: 110px;
+    height: 18px;
+    border: solid 1px white;
+    background-color: #b51b1b;
+    margin-top: 3px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 5px;
+    display: inline-block;
+    TEXT-ALIGN: center;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+a.informacja_dodanie {
+    color: #00d237;
+    text-align: center;
+    display: block;
+    font-family: Arial;
+}
+
+.tabela_status {
+    width: 100%;
+}
+
+.tabela_status td {
+    background-color: #f7f7f7;
+    padding: 5px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.tabla_status tr td {
+    background-color: white;
+}
+
+.naglowek_status {
+    color: #494f5c;
+    font-weight: bold;
+}
+
+.pole_tekstowe {
+    width: 400px;
+    height: 200px;
+}
+
+.img_ap {
+    text-align: center;
+    border-radius: 30px;
+}
